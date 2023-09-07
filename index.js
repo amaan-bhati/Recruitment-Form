@@ -50,6 +50,21 @@ function checkEmail(input) {
 const re = /^(([^<>()[]\.,;:s@"]+(.[^<>()[]\.,;:s@"]+)*)|(".+"))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/;
 if (re.test(input.value.trim())) {
 showSuccess(input);
+  
+// Check Password Match
+function checkPasswordMatch(input1, input2) {
+if (input1.value !== input2.value) {
+showError(input2, "Passwords do not match");
+}
+}
+form.addEventListener("submit", (e) => {
+e.preventDefault();
+checkRequired([username, email, password, cPassword]);
+checkLenghth(username, 3, 15);
+checkLenghth(password, 8, 25);
+checkEmail(email);
+checkPasswordMatch(password, cPassword);
+});
 } else {
 showError(input, "E-mail is not Valid");
 }

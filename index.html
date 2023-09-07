@@ -1,47 +1,59 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <title>Society Recruitment form</title>
-        <body>
-            <form action="http://google.co.in">
-                <div align="center">
-                <h1>Society Recruitment form</h1>
-                Enter your name:
-                <input type="text" name="UserName" size=35 maxlength=35 value="">
-                </br></br>
-                Enter your branch:
-                <input type="text" name="Branch" size=35 maxlength=35 value=""> </br> </br>
-                Tell us a little about yourself:
-                <textarea name="Comments" cols=30 rows=4></textarea> </br> </br>
-                Do you code at home?
-                <input type="radio" name="exe" value=1>Yes
-                <input type="radio" name="exe" value=2>No
-                </p>
-                How do you like to read about your favorite domain?
-                <p>
-                <input type="checkbox" name="Books">Books
-                <input type="checkbox" name="Web">Online resources
-                <input type="checkbox" name="Phone">Phone apps
-                <input type="checkbox" name="Magazines">Magazines
-                </p>
-                We are recruting for the following domains
-                <select name="domainpref" ><option>
-                <option value=1 selected = "true">front-end development
-                <option value=2 >back-end development
-                <option value=3 >full-stack development
-                <option value=4 >content writing
-                <option value=5 >social-media handling
-                <option value=6 >machine learning
-                <option value=7 >marketing
-                <option value=8 >
-                <option value=9 >
-                </select>
-                </br></br>
-                <input type=submit value="Submit form">
-                </div>
-                </form>
-
-        </body>
-
-    </head>
+  <head>
+    <title>
+      form validator
+    </title>
+    <link href="style.css" type="stylesheet">
+  </head>
+<body>
+<div class="container">
+<h1>Register With Us</h1>
+<form action="" id="form" class="form">
+<div class="input">
+<label for="username">Username</label>
+<input
+type="text"
+name="username"
+id="username"
+placeholder="Username"
+autocomplete="off"
+/>
+<small>Error message</small>
+</div>
+<div class="input">
+<label for="email">Email</label>
+<input
+type="text"
+name="email"
+id="email"
+placeholder="Email"
+autocomplete="off"
+/>
+<small>Error message</small>
+</div>
+<div class="input">
+<label for="password">Password</label>
+<input
+type="password"
+name="password"
+id="password"
+placeholder="Password"
+/>
+<small>Error message</small>
+</div>
+<div class="input">
+<label for="c-password">Confirmer Password</label>
+<input
+type="password"
+name="c-password"
+id="c-password"
+placeholder="Confirmer Password"
+/>
+<small>Error message</small>
+</div>
 </html>
+<button>Submit</button>
+</form>
+</div>
+  <script src = "index.js"
+      </body>
